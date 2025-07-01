@@ -8,7 +8,8 @@ import { FirstCompComponent } from './first-comp/first-comp.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FirstCompComponent
+    FirstCompComponent,
+   
   ],
   imports: [
     BrowserModule,
