@@ -1,0 +1,18 @@
+
+
+<div >
+  <span class="p-float-label">
+    <input id="name" type="text" pInputText [(ngModel)]="name" />
+    <label for="name">Your Name</label>
+  </span>
+</div>
+
+<!-- Toast Container -->
+<p-toast></p-toast>
+
+<!-- Buttons to Show Toasts -->
+<div class="toast-buttons">
+  <button pButton type="button" label="Show Success" icon="pi pi-check" (click)="showSuccess()"></button>
+  <button pButton type="button" label="Show Error" icon="pi pi-times" class="p-button-danger" (click)="showError()"></button>
+  <button pButton type="button" label="Show Info" icon="pi pi-info-circle" class="p-button-info" (click)="showInfo()"></button>
+</div>

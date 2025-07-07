@@ -1,0 +1,12 @@
+.p-float-label {
+  display: block;
+  margin: 1rem;
+  
+}
+
+.custom-blue-avatar {
+  background-color: #007ad9 !important;
+  color: white !important;
+  margin:20px;
+ 
+}
