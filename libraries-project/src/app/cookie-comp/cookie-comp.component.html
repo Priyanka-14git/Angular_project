@@ -1,0 +1,24 @@
+
+<h2>Cookie Service Demo</h2>
+
+<div>
+    <input [(ngModel)]="cookieKey" placeholder="Cookie Key" />
+    <input [(ngModel)]="cookieValue" placeholder="Cookie Value" />
+    <input type="number" [(ngModel)]="expiryDays" placeholder="Expiry (days)" />
+    <button (click)="setCookie()">Set Cookie</button>
+</div>
+
+<div style="margin-top: 20px;">
+    <button (click)="getCookie()">Get Cookie</button>
+    <button (click)="checkCookie()">Check Cookie</button>
+    <button (click)="deleteCookie()">Delete Cookie</button>
+    <button (click)="getAllCookies()">Get All Cookies</button>
+    <button (click)="deleteAllCookies()">Delete All Cookies</button>
+</div>
+
+ <div style="margin-top: 20px;">
+    <p><strong>Cookie Exists:</strong> {{ cookieExists }}</p>
+    <p><strong>Cookie Value:</strong> {{ retrievedValue }}</p>
+    <p><strong>All Cookies:</strong></p>
+    <pre>{{ allCookies | json }}</pre>
+  </div>
