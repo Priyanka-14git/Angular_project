@@ -15,6 +15,7 @@ import { PractInterceptorInterceptor } from './services/pract-interceptor.interc
 import { PractideTwoComponent } from './practide-two/practide-two.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ChildComponent } from './child/child.component';
     PractideTwoComponent,
     ParentComponent,
     ChildComponent,
+    NgTemplateComponent,
    
   ],
   imports: [
