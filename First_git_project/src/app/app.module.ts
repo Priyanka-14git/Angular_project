@@ -16,6 +16,8 @@ import { PractideTwoComponent } from './practide-two/practide-two.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.component';
+import { ParentMisComponent } from './stage-4-concepts/parent-mis/parent-mis.component';
+import { ChildMisComponent } from './stage-4-concepts/child-mis/child-mis.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.
     ParentComponent,
     ChildComponent,
     NgTemplateComponent,
+    ParentMisComponent,
+    ChildMisComponent,
    
   ],
   imports: [
