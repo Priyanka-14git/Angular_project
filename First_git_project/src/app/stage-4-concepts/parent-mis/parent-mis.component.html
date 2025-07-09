@@ -1,0 +1,16 @@
+<h4 class="text-center">Parent Component</h4>
+<div class="border container w-50">
+    <app-child-mis>
+        <p>Hello, I am para line from parent component using ng-centent</p>
+        <p #ParentContent>Hello, I am para line from parent component using ng-centent and contentChild</p>
+    </app-child-mis>
+</div>
+
+<br>
+<hr>
+<br>
+<h5>ng Container</h5>
+<ng-container *ngIf="showList==true">
+    <p *ngFor="let dt of StateList">{{dt}}</p>
+</ng-container>
+

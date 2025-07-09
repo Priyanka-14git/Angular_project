@@ -15,6 +15,7 @@ import { PractideTwoComponent } from './practide-two/practide-two.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.component';
+import { ParentMisComponent } from './stage-4-concepts/parent-mis/parent-mis.component';
 
 
 const routes: Routes = [
@@ -45,7 +46,10 @@ const routes: Routes = [
 {path:'featModule',loadChildren:()=>import("./pract-module/pract-module.module").then((mod:any)=>mod.PractModuleModule)},
 
 //ng-template onwards
-{path:'ngTemp',component:NgTemplateComponent}
+{path:'ngTemp',component:NgTemplateComponent},
+
+//ng-content
+{path:'ngContent' ,component:ParentMisComponent}
 
 ];
 
