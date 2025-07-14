@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" *ngIf="showNav==true">
   <div class="container-fluid">
       <ul class="navbar-nav">
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="">Home</a>
+          <a class="nav-link" routerLink="home">Home</a>
         </li>
         
         
@@ -92,10 +92,15 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" routerLink="ngTemp"> NG template </a></li>
             <li><a class="dropdown-item" routerLink="ngContent"> MisParent</a></li>
+             <li><a class="dropdown-item" routerLink="host">Host Concepts</a></li>
             
            
             
           </ul>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn btn-dark" (click)="onLogout()">Logout</button>
         </li>
 
         

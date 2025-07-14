@@ -18,6 +18,10 @@ import { ChildComponent } from './child/child.component';
 import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.component';
 import { ParentMisComponent } from './stage-4-concepts/parent-mis/parent-mis.component';
 import { ChildMisComponent } from './stage-4-concepts/child-mis/child-mis.component';
+import { HostConceptsComponent } from './stage-4-concepts/host-concepts/host-concepts.component';
+import { HostDirDirective } from './shared/host-dir.directive';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,12 +39,17 @@ import { ChildMisComponent } from './stage-4-concepts/child-mis/child-mis.compon
     NgTemplateComponent,
     ParentMisComponent,
     ChildMisComponent,
+    HostConceptsComponent,
+    HostDirDirective,
+    LoginComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-     HttpClientModule
+     HttpClientModule,
+     FormsModule,
+     ReactiveFormsModule
   ],
   providers: [
     {

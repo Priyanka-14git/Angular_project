@@ -9,8 +9,12 @@ export class ChildMisComponent {
   @ContentChild('ParentContent') ParentContent!:ElementRef;
 
   ngAfterContentInit(){
+    if(this.ParentContent){
     this.ParentContent.nativeElement.style.color='red';
     this.ParentContent.nativeElement.style.fontSize='20px';
+    }else{
+       console.warn('element is undefined');
+    }
   }
 
 }

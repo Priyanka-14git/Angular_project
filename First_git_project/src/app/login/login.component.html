@@ -1,0 +1,16 @@
+
+<div class="background-comp ">
+    <div class="container w-50 mb-5 ">
+        <h3 class="text-center  fst-italic">Welcome Back</h3>
+        <h5 class="text-danger mt-5 text-center" *ngIf="ShowError==true">Please enter valid credentials!</h5>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-group border p-4 rounded out-cont shadow">
+            <label for="fname" class="fw-lighter">Username</label>
+            <input type="text" name="uname" id="fname" formControlName="uname" class="form-control">
+            
+            <label for="fpass" class="fw-lighter">Password</label>
+            <input type="password" name="pass" id="fpass" formControlName="pass" class="form-control">
+
+            <button class="btn btn-info mt-2 w-100">Login</button>
+        </form>
+    </div>
+</div>

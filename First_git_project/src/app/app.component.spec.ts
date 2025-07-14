@@ -20,10 +20,12 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('First_git_project');
   });
 
+  
+
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('First_git_project app is running!');
-  });
+  const fixture = TestBed.createComponent(AppComponent);
+  fixture.detectChanges();
+  const compiled = fixture.nativeElement as HTMLElement;
+  expect(compiled.querySelector('a')?.textContent).toContain('Home');
+});
 });

@@ -32,7 +32,13 @@ export class FirstCompComponent {
    //this.custServ.tryCatchmethod().subscribe((res:any)=>console.log(res));
   console.log("Start of the program");
 
-let result = JSON.parse("{name: 'Priyanka'}"); // ❌ Invalid JSON (should use double quotes)
+//let result = JSON.parse("{'name': 'Priyanka'}"); // ❌ Invalid JSON (should use double quotes)
+try {
+  let result = JSON.parse('{"name": "Priyanka"}');
+  console.log(result);
+} catch (e) {
+  console.error("Invalid JSON:", e);
+}
 
 console.log("This line will not run"); // ❌ This will be skipped due to crash
 

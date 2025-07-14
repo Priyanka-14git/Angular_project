@@ -16,6 +16,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { NgTemplateComponent } from './stage-4-concepts/ng-template/ng-template.component';
 import { ParentMisComponent } from './stage-4-concepts/parent-mis/parent-mis.component';
+import { HostConceptsComponent } from './stage-4-concepts/host-concepts/host-concepts.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -27,7 +29,8 @@ const routes: Routes = [
   {path:'health-claim',component:HealthClaimsComponent},
   {path:'motor-claim',component:MotorClaimsComponent}
 ]},
-{path:'',component:HomeComponent},
+{path:'home',component:HomeComponent},
+{path:'',component:LoginComponent},
 
 {path:'otherIns',loadChildren:()=>import("./others/others.module").then((mod:any)=>mod.OthersModule),canLoad:[thirdGuardGuard]},
 
@@ -49,7 +52,10 @@ const routes: Routes = [
 {path:'ngTemp',component:NgTemplateComponent},
 
 //ng-content
-{path:'ngContent' ,component:ParentMisComponent}
+{path:'ngContent' ,component:ParentMisComponent},
+
+//host concepts
+{path:'host' ,component:HostConceptsComponent}
 
 ];
 
